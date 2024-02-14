@@ -1,0 +1,104 @@
+/* Colors and fonts */
+body {
+  background: #f4a1ff;
+  color: #000000;
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  font-weight: lighter;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 900;
+}
+h2 {
+  color: #ff993a;
+  font-size: 20px;
+  font-weight: lighter; /* Cette propriété est répétée, supprimez une des deux occurrences */
+  font-weight: 500;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #0b0b0d;
+  font-weight: 600;
+  font-size: 16px;
+}
+a:hover {
+  color: black;
+}
+
+/* Custom design with class (99% of your design) */
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.card-white {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.img-circle {
+  border-radius: 75%;
+}
+.btn-red {
+    display: inline-block; /* Assure que le lien se comporte comme un élément de bloc */
+    padding: 10px 20px; /* Ajoute de l'espace autour du texte pour simuler un bouton */
+    background-color: #ff0000; /* Couleur de fond rouge, remplaçant le style existant */
+    color: white; /* Couleur du texte blanc */
+    border: none; /* Supprime les bordures */
+    border-radius: 4px; /* Ajoute des coins arrondis */
+    text-decoration: none; /* Supprime la soulignement du texte */
+}
+
+.btn-red:hover {
+    background-color: #cc0000; /* Changement de couleur au survol */
+    cursor: pointer; /* Changement de curseur au survol */
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+.list-inline i {
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+.list-inline i:hover {
+  color: black;
+}
+
+/* Design adjustments using id (1% design remaining) */
+#introduction p {
+  margin-bottom: 40px;
+}
